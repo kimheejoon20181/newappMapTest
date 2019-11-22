@@ -12,8 +12,10 @@
 		AC81A32A2387A19D00C03910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC81A3282387A19D00C03910 /* Main.storyboard */; };
 		AC81A32C2387A1A600C03910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC81A32B2387A1A600C03910 /* Assets.xcassets */; };
 		AC81A32F2387A1A600C03910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC81A32D2387A1A600C03910 /* LaunchScreen.storyboard */; };
-		AC81A33A2387A1A600C03910 /* Test1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81A3392387A1A600C03910 /* Test1Tests.swift */; };
-		AC81A3452387A1A600C03910 /* Test1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81A3442387A1A600C03910 /* Test1UITests.swift */; };
+		AC81A3532387A72000C03910 /* Address2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC81A3522387A72000C03910 /* Address2.plist */; };
+		AC81A3552387A9E700C03910 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81A3542387A9E700C03910 /* TotalViewController.swift */; };
+		AC81A3572387A9F000C03910 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC81A3562387A9F000C03910 /* DetailViewController.swift */; };
+		AC81A35A2387AC0F00C03910 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC81A3592387AC0F00C03910 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +44,11 @@
 		AC81A32E2387A1A600C03910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC81A3302387A1A600C03910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC81A3352387A1A600C03910 /* Test1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC81A3392387A1A600C03910 /* Test1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1Tests.swift; sourceTree = "<group>"; };
-		AC81A33B2387A1A600C03910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC81A3402387A1A600C03910 /* Test1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC81A3442387A1A600C03910 /* Test1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1UITests.swift; sourceTree = "<group>"; };
-		AC81A3462387A1A600C03910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC81A3522387A72000C03910 /* Address2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Address2.plist; sourceTree = "<group>"; };
+		AC81A3542387A9E700C03910 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
+		AC81A3562387A9F000C03910 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AC81A3592387AC0F00C03910 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC81A35A2387AC0F00C03910 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				AC81A3232387A19D00C03910 /* Test1 */,
-				AC81A3382387A1A600C03910 /* Test1Tests */,
-				AC81A3432387A1A600C03910 /* Test1UITests */,
 				AC81A3222387A19D00C03910 /* Products */,
+				AC81A3582387AC0F00C03910 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,29 +102,22 @@
 				AC81A3242387A19D00C03910 /* AppDelegate.swift */,
 				AC81A3262387A19D00C03910 /* ViewController.swift */,
 				AC81A3282387A19D00C03910 /* Main.storyboard */,
+				AC81A3542387A9E700C03910 /* TotalViewController.swift */,
+				AC81A3562387A9F000C03910 /* DetailViewController.swift */,
 				AC81A32B2387A1A600C03910 /* Assets.xcassets */,
 				AC81A32D2387A1A600C03910 /* LaunchScreen.storyboard */,
+				AC81A3522387A72000C03910 /* Address2.plist */,
 				AC81A3302387A1A600C03910 /* Info.plist */,
 			);
 			path = Test1;
 			sourceTree = "<group>";
 		};
-		AC81A3382387A1A600C03910 /* Test1Tests */ = {
+		AC81A3582387AC0F00C03910 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC81A3392387A1A600C03910 /* Test1Tests.swift */,
-				AC81A33B2387A1A600C03910 /* Info.plist */,
+				AC81A3592387AC0F00C03910 /* MapKit.framework */,
 			);
-			path = Test1Tests;
-			sourceTree = "<group>";
-		};
-		AC81A3432387A1A600C03910 /* Test1UITests */ = {
-			isa = PBXGroup;
-			children = (
-				AC81A3442387A1A600C03910 /* Test1UITests.swift */,
-				AC81A3462387A1A600C03910 /* Info.plist */,
-			);
-			path = Test1UITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC81A3532387A72000C03910 /* Address2.plist in Resources */,
 				AC81A32F2387A1A600C03910 /* LaunchScreen.storyboard in Resources */,
 				AC81A32C2387A1A600C03910 /* Assets.xcassets in Resources */,
 				AC81A32A2387A19D00C03910 /* Main.storyboard in Resources */,
@@ -258,6 +254,8 @@
 			files = (
 				AC81A3272387A19D00C03910 /* ViewController.swift in Sources */,
 				AC81A3252387A19D00C03910 /* AppDelegate.swift in Sources */,
+				AC81A3552387A9E700C03910 /* TotalViewController.swift in Sources */,
+				AC81A3572387A9F000C03910 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC81A33A2387A1A600C03910 /* Test1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC81A3452387A1A600C03910 /* Test1UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
